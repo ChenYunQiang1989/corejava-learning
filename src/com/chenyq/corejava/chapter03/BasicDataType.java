@@ -1,5 +1,7 @@
 package com.chenyq.corejava.chapter03;
 
+import java.util.Scanner;
+
 public class BasicDataType {
 
 	public static void main(String[] args) {
@@ -47,5 +49,25 @@ public class BasicDataType {
 		System.out.println(b1 && b2);
 		
 		//位运算符
+		
+		//字符串
+		String fullName = "Li" + " Lei";
+		String name = String.join(" ", "Han", "Meimei");
+		System.out.println(fullName);
+		System.out.println(name);
+		
+		System.out.println(fullName.equals(name));
+		
+	    StringBuilder sql = new StringBuilder();
+	    sql.append("select * from t_user ");
+	    sql.append("where name = 'lilei' or ");
+	    sql.append("name = 'hanmeimei' ");
+	    System.out.println(sql.toString());
+	    
+	    Scanner scanner = new Scanner(System.in);
+	    System.out.printf("Can you still remember %s and %s through %d years ?", fullName, name, 15);
+	    
+	    int[] scores = {100, 98, 89};
+	    scores = new int[] {98, 67, 99};
 	}
 }
