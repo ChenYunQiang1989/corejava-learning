@@ -2,7 +2,7 @@ package com.chenyq.corejava.chapter03;
 
 import java.util.Scanner;
 
-public class BasicDataType {
+public class ChaptorThree {
 
 	public static void main(String[] args) {
 		//整型
